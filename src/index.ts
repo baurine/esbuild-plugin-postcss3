@@ -19,10 +19,11 @@ import tmp from "tmp";
 import postcss from "postcss";
 import postcssModules from "postcss-modules";
 import less from "less";
-import stylus from "stylus";
+// import stylus from "stylus";
 import resolve from "resolve";
 
-type StylusRenderOptions = Parameters<typeof stylus.render>[1]; // The Stylus.RenderOptions interface doesn't seem to be exported... So next best
+// type StylusRenderOptions = Parameters<typeof stylus.render>[1]; // The Stylus.RenderOptions interface doesn't seem to be exported... So next best
+type StylusRenderOptions = {};
 
 interface PostCSSPluginOptions {
   plugins: PostCSSPlugin[];
@@ -287,10 +288,11 @@ function renderStylus(
   options: StylusRenderOptions
 ): Promise<string> {
   return new Promise((resolve, reject) => {
-    stylus.render(str, options, (e, res) => {
-      if (e) reject(e);
-      else resolve(res);
-    });
+    resolve(str);
+    // stylus.render(str, options, (e, res) => {
+    //   if (e) reject(e);
+    //   else resolve(res);
+    // });
   });
 }
 

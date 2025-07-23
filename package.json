@@ -1,6 +1,6 @@
 {
   "name": "@baurine/esbuild-plugin-postcss3",
-  "version": "0.3.3",
+  "version": "0.4.3",
   "description": "Use postcss with esbuild",
   "repository": "https://github.com/baurine/esbuild-plugin-postcss3",
   "author": "baurine <2008.hbl@gmail.com>",
@@ -35,7 +35,6 @@
     "postcss-modules": "^4.0.0",
     "resolve": "^1.20.0",
     "sass": "^1.x",
-    "stylus": "^0.x",
     "tmp": "^0.2.1"
   },
   "devDependencies": {
@@ -45,7 +44,6 @@
     "@types/mocha": "^8.2.2",
     "@types/node": "^14.14.37",
     "@types/sass": "^1.16.0",
-    "@types/stylus": "^0.48.33",
     "@types/tmp": "^0.2.0",
     "chai": "^4.3.4",
     "cross-env": "^7.0.3",
@@ -60,7 +58,6 @@
   "peerDependencies": {
     "less": "^4.x",
     "postcss": "8.x",
-    "sass": "^1.x",
-    "stylus": "^0.x"
+    "sass": "^1.x"
   }
 }
